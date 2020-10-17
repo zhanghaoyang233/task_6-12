@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task8</title>
+    <style>
+        @media screen and (min-width: 768px) {
+            #column1 {
+                display: grid;
+                width: 100%;
+                grid-template-rows: 200px;
+                grid-template-columns: repeat(3, 32.5%);
+                grid-column-gap: 20px;
+            }
+            #column2 {
+                display: grid;
+                width: 100%;
+                grid-template-rows: 200px;
+                grid-template-columns: 1fr 820px 1fr;
+                grid-column-gap: 20px;
+                margin-top: 20px;
+            }
+            #column3 {
+                display: grid;
+                width: 100%;
+                grid-template-rows: 200px;
+                grid-template-columns: 1fr 1fr 4fr 4fr 620px;
+                grid-column-gap: 20px;
+                margin-top: 20px;
+            }
+            .column1_1 {
+                border: 1px solid #999999;
+            }
+            .column1_2 {
+                border: 1px solid #999999;
+            }
+            .column1_3 {
+                border: 1px solid #999999;
+            }
+            .column2_1 {
+                border: 1px solid #999999;
+            }
+            .column2_2 {
+                border: 1px solid #999999;
+            }
+            .column2_3 {
+                border: 1px solid #999999;
+            }
+            .column3_1 {
+                border: 1px solid #999999;
+            }
+            .column3_2 {
+                border: 1px solid #999999;
+            }
+            .column3_3 {
+                border: 1px solid #999999;
+            }
+            .column3_4 {
+                border: 1px solid #999999;
+            }
+            .column3_5 {
+                border: 1px solid #999999;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            #column1 {
+                display: grid;
+                width: 100%;
+                grid-template-rows: 200px;
+                grid-template-columns: 50% 50%;
+                grid-column-gap: 20px;
+            }
+            #column2 {
+                display: grid;
+                width: 100%;
+                grid-template-rows: 200px;
+                grid-template-columns: 18% 60% 18%;
+                grid-column-gap: 20px;
+                margin-top: 20px;
+            }
+            #column3 {
+                display: grid;
+                height: 200px;
+                width: 100%;
+                grid-template-rows: 200px;
+                grid-template-columns: 20% 20% 56%;
+                grid-column-gap: 20px;
+                margin-top: 20px;
+            }
+            .column1_1 {
+                border: 1px solid #999999;
+            }
+            .column1_2 {
+                border: 1px solid #999999;
+            }
+            .column1_3 {
+                margin-top: 20px;
+                width: 208%;
+                height: 200px;
+                border: 1px solid #999999;
+            }
+            .column2_1 {
+                border: 1px solid #999999;
+            }
+            .column2_2 {
+                border: 1px solid #999999;
+            }
+            .column2_3 {
+                border: 1px solid #999999;
+            }
+            .column3_1 {
+                border: 1px solid #999999;
+            }
+            .column3_2 {
+                border: 1px solid #999999;
+            }
+            .column3_3 {
+                border: 1px solid #999999;
+            }
+            .column3_4 {
+                margin-top: 20px;
+                border: 1px solid #999999;
+                height: 200px;
+                width: 200%;
+            }
+            .column3_5 {
+                margin-top: 20px;
+                border: 1px solid #999999;
+                height: 200px;
+                width: 200%;
+                margin-left: 140px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="column1">
+        <div class="column1_1">四栏</div>
+        <div class="column1_2">四栏</div>
+        <div class="column1_3">四栏</div>
+    </div>
+    <div id="column2">
+        <div class="column2_1">三栏</div>
+        <div class="column2_2">六栏</div>
+        <div class="column2_3">三栏</div>
+    </div>
+    <div id="column3">
+        <div class="column3_1">一栏</div>
+        <div class="column3_2">一栏</div>
+        <div class="column3_3">两栏</div>
+        <div class="column3_4">两栏</div>
+        <div class="column3_5">六栏</div>
+    </div>
+</body>
+
+</html>

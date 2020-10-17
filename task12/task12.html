@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/selectivizr.js"></script>
+    <title>task12</title>
+    <style>
+        table {
+            margin: 0 auto;
+        }
+        
+        th {
+            background-color: black;
+            color: white;
+        }
+        
+        table tr:nth-child(odd) {
+            background-color: #ccc;
+        }
+        
+        table tr:nth-child(3),
+         :nth-child(4) {
+            color: red;
+        }
+        
+        table tr:nth-child(6) td:nth-child(2),
+        tr:nth-child(8) td:nth-child(2),
+        tr:nth-child(10) td:nth-child(2) {
+            color: red;
+        }
+        
+        input {
+            width: 180px;
+            border: 2px solid pink;
+            transition: blue, width 1s, ease-in 0.1s;
+        }
+        
+        input:focus {
+            width: 300px;
+            border-color: cornflowerblue;
+        }
+        /*----------------------------------------------------------------------------------------------*/
+        
+        img {
+            width: 500px;
+            height: 375px;
+        }
+        
+        .href {
+            position: absolute;
+            top: 400px;
+            left: 550px;
+        }
+        
+        .href a {
+            width: 80px;
+            height: 20px;
+            background-color: #666;
+            float: left;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 8px;
+        }
+        
+        .images {
+            position: absolute;
+            z-index: -1;
+            margin-left: 500px;
+        }
+        
+        .none {
+            display: none;
+        }
+        
+        img {
+            position: absolute;
+            width: 500px;
+            height: 325px;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        img:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    //odd和even是控制单双行的方法，odd控制单行，even控制双行。
+    <table border="1">
+        <tr>
+            <th>排名</th>
+            <th>网站</th>
+            <th>热度</th>
+        </tr>
+        <tr style="color: red;">
+            <td>1.</td>
+            <td>喵帕斯前端学院</td>
+            <td>13000</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>喵帕斯前端学院</td>
+            <td>12000</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>喵帕斯前端学院</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>喵帕斯前端学院</td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>喵帕斯前端学院</td>
+            <td>9000</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>喵帕斯前端学院</td>
+            <td>8000</td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>喵帕斯前端学院</td>
+            <td>7000</td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>喵帕斯前端学院</td>
+            <td>6000</td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td>喵帕斯前端学院</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>10.</td>
+            <td>喵帕斯前端学院</td>
+            <td>4000</td>
+        </tr>
+
+    </table>
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <div style="margin-left: 650px;"> <input type="text"></div>
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <div class="href">
+        <a href="#a"></a>
+        <a href="#b"></a>
+        <a href="#c"></a>
+        <a href="#d"></a>
+        <a href="#e"></a>
+    </div>
+
+
+    <div class="images">
+        <img src="../task11/images/1.jpg" id="a">
+        <img src="../task11/images/2.jpg" id="b" class="none">
+        <img src="../task11/images/3.jpg" id="c" class="none">
+        <img src="../task11/images/4.jpg" id="d" class="none">
+        <img src="../task11/images/5.jpg" id="e" class="none">
+    </div>
+
+
+</body>
+
+</html>
